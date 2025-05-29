@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Default light theme styles */
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+/* Dark theme styles */
+html.dark {
+  --bg-color: #1a1a1a;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+.theme-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+}
